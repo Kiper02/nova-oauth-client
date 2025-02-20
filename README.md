@@ -1,3 +1,7 @@
+## Layout figma
+Open figma [layout](https://www.figma.com/design/qmBAWJUCe8NFEQbMFK0d9b/outh2?node-id=0-1&p=f&t=7T251wW9cR7SCAFb-0)
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
