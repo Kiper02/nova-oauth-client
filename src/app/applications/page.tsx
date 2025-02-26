@@ -1,4 +1,4 @@
-import Application from '@/components/applications/Applications';
+import Application from '@/shared/components/applications/Applications';
 import dotenv from 'dotenv'
 dotenv.config();
 

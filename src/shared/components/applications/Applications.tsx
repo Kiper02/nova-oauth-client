@@ -1,11 +1,12 @@
 "use client";
 
-import { ItemApplications } from "@/components/applications/ItemApplications";
-import Container from "@/components/container/Container";
-import Header from "@/components/header/Header";
+
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import Header from "../header/Header";
+import Container from "../container/Container";
+import { ItemApplications } from "./ItemApplications";
 
 interface IApplications {
   id: string;

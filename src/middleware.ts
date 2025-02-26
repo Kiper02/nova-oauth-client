@@ -8,6 +8,7 @@ export function middleware(request: NextRequest) {
 
     const isAuthPage = url.includes('auth');
 
+    
     if(isAuthPage) {
         if(session) {
             return NextResponse.redirect(new URL("/applications", url));   

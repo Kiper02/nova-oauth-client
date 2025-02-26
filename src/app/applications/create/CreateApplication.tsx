@@ -1,15 +1,14 @@
 "use client";
 
-import CreateApplicationStepOne from "@/components/applications/CreateApplicationStepOne";
-import CreateApplicationStepThree from "@/components/applications/CreateApplicationStepTree";
-import CreateApplicationStepTwo from "@/components/applications/CreateApplicationStepTwo";
-import ProcessLine from "@/components/applications/ProcessLine";
-import Container from "@/components/container/Container";
-import Header from "@/components/header/Header";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import dotenv from 'dotenv'
+import Header from "@/shared/components/header/Header";
+import Container from "@/shared/components/container/Container";
+import CreateApplicationStepOne from "@/shared/components/applications/CreateApplicationStepOne";
+import CreateApplicationStepTwo from "@/shared/components/applications/CreateApplicationStepTwo";
+import CreateApplicationStepThree from "@/shared/components/applications/CreateApplicationStepTree";
 dotenv.config();
 
 export default function CreateApplication() {
@@ -35,7 +34,7 @@ export default function CreateApplication() {
         });
     
         console.log("Успешно:", response);
-        push("/");
+        push("/applications");
       } catch (error) {
         if (axios.isAxiosError(error)) {
           console.error("Ошибка Axios:", error.message, `${process.env.API_URL}/application`);

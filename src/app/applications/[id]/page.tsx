@@ -1,4 +1,3 @@
-// app/applications/[id]/page.tsx
 
 import { redirect } from "next/navigation";
 

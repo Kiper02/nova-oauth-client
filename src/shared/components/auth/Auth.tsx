@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Header from "../header/Header";
 import { useState } from "react";
-import authService from "@/services/auth.service";
+import authService from "@/shared/services/auth.service";
 import { useRouter } from "next/navigation";
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';

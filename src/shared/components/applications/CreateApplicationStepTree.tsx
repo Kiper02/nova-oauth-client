@@ -1,9 +1,7 @@
 import ProcessLine from "./ProcessLine";
 import Image from "next/image";
-import webServiceUrl from "./../../../public/web-service.svg";
-import { Dispatch, SetStateAction, useState } from "react";
-import axios from "axios";
-import { useRouter } from "next/navigation";
+import webServiceUrl from "./../../../../public/web-service.svg";
+import { Dispatch, SetStateAction } from "react";
 
 interface ICreateApplicationStepThreeProps {
   name: string;
